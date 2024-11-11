@@ -79,14 +79,14 @@ def start_scanning():
             plt.plot(np.fft.fftshift(np.fft.fftfreq(len(filtered_samples), 1/sdr.sample_rate)), power)
             plt.xlabel('Frequency (Hz)')
             plt.ylabel('Power')
-            plt.title(f'Freq Spectrum at {freq/1e6} MHz, Azimuth: {azimuth}, Elevation: {elevation}')
+            plt.title(f'Frequency Spectrum at {freq/1e6} MHz, Azimuth: {azimuth}, Elevation: {elevation}')
             plt.grid()
             plt.pause(0.1)
     plt.show()
 
 # UI setup
 root = tk.Tk()
-root.title("Enhanced Radio Telescope Control")
+root.title("Telescope control panel")
 
 # Information Display Frame
 info_frame = tk.Frame(root, relief=tk.SUNKEN, bd=1)
